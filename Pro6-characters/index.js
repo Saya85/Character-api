@@ -6,7 +6,7 @@ const logger = require('./config/winston');
 
 
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 3000; //Configuramos puerto heroku
 
 //Middleware
 //app.use(morgan('dev'));
