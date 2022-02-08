@@ -1,1 +1,1 @@
-web: node /Pro6-characters/index.js
+web: node ./Pro6-characters/index.js
