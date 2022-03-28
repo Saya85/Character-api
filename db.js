@@ -1,5 +1,17 @@
 
-  let characters = [
+const config = require ('./config/config.json');
+const {Sequelize, DataTypes} = requiere('sequelize');
+
+/* const sequelize = new Sequelize(
+  process.env.mysql_DATABASE || config.development.datebase,
+  process.env.mysql_USER || config.development.username,
+  process.env.mysql_PASSWORD || config.development.password,
+  {
+    
+  }
+) */
+
+   let characters = [
     {
       "id": 1,
       "name": "Rick Sanchez",
@@ -47,4 +59,4 @@
     }
   ]
 
-module.exports = characters;
+module.exports = characters; 
